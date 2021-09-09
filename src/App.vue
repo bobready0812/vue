@@ -1,9 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 class="clock">00:00</h1>
 </template>
 
 <script>
+
+
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
@@ -12,6 +15,19 @@ export default {
     HelloWorld
   }
 }
+const clock = document.querySelector(".clock") 
+
+
+function getClock() {
+  const date = new Date();
+  const hours = String(date.getHours());
+  const minutes = String(date.getMinutes());
+
+  clock.innerText =`${hours}:${minutes}`;
+}
+
+setInterval(getClock,1000);
+
 </script>
 
 <style>
