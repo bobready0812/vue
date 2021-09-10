@@ -1,32 +1,44 @@
 <template>
   
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <h1 class="clock">00:00</h1>
+ 
+      <h1 class="clock">{{hours}}:{{minutes}}</h1>
+      
+   
 </template>
 
 <script>
 
 
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      hours: 0,
+      minutes: 0, 
+    }
+  },
+  methods: {
+    
+    getClock() {
+      const date = new Date();
+        this.hours = date.getHours();
+        this.minutes = this.PadStartMinutes(date.getMinutes());
+    },
+    setTime () {
+      
+      setInterval(this.getClock, 1000)
+    },
+    PadStartMinutes (digit) {
+      return ('0' + digit).slice(-2)
+    }
+  },
+  mounted () {
+    this.setTime()
   }
 }
-const clock = document.querySelector(".clock") 
 
-
-function getClock() {
-  const date = new Date();
-  const hours = String(date.getHours());
-  const minutes = String(date.getMinutes());
-
-  clock.innerText =`${hours}:${minutes}`;
-}
-
-setInterval(getClock,1000);
 
 </script>
 
