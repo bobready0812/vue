@@ -2,7 +2,7 @@
   
  
       <h1 class="clock">{{hours}}:{{minutes}}</h1>
-      
+       
    
 </template>
 
@@ -23,7 +23,12 @@ export default {
     
     getClock() {
       const date = new Date();
-        this.hours = date.getHours();
+        
+        if(date.getHours() > 13) {
+          this.hours = date.getHours()- 12;
+        } else {
+          this.hours = date.getHours();
+        }
         this.minutes = this.PadStartMinutes(date.getMinutes());
     },
     setTime () {
