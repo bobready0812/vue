@@ -1,5 +1,8 @@
 <template>
     <div class="clock">
+        <div class="bg2"> 
+           <h2 class="s"> {{day}} </h2>
+            </div>
         <div class="bg">
             <h2 id="h">{{hours}}</h2>
         </div>
@@ -7,6 +10,7 @@
         <div class="bg">
             <h2 id="m">{{minutes}}</h2>
         </div>
+       
     </div>
 </template>
 
@@ -15,7 +19,10 @@
     export default {
         name: 'App',
         data() {
-            return {hours: 0, minutes: 0}
+            return {hours: 0, 
+                    minutes: 0,
+                    day: "day"
+                    }
         },
         methods: {
 
@@ -29,7 +36,16 @@
                 } else {
                     this.hours = date.getHours();
                 }
+
+                if (date.getHours() > 12) {
+                    this.day = "P.M.";
+                } else {
+                    this.day = "A.M."
+                }
+
+         
                 this.minutes = this.PadStartMinutes(date.getMinutes());
+
             },
             setTime() {
 
@@ -90,7 +106,22 @@
         border-radius: 50%;
         box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 5px rgba(0, 0, 0, 0.2);
     }
+     
 
+
+    .bg2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4em;
+        height: 4em;
+        font-size: 25px;
+        position: relative;
+        border-radius: 50%;
+       
+    }
+       
+    
     #m {
         margin: 0 10px;
     }
