@@ -1,7 +1,7 @@
 <template>
-    <input class="num1">
+    <input placeholder="number1" class="num1">
     <br>
-    <input class="num2">
+    <input  placeholder="number2" class="num2">
     <br>
     <button @click="add" class="sum">더하기</button>
     <h1 class="h1"> {{sum}} </h1>
