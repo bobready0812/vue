@@ -2,7 +2,7 @@
    
    <h1> {{num1}} </h1>
    <h1> {{num2}} </h1>
-   
+   <h1> {{sum}} </h1>
    <button @click="increase1">1</button>
    <button @click="increase2">2</button>
    <button @click="increase3">3</button>
@@ -23,8 +23,8 @@
         data() {
             return {
                num1:null,
-               num2:null
-
+               num2:null,
+               sum:null
                     }
         },
         methods: { 
@@ -93,7 +93,7 @@
             },
              
             add() {
-            
+              this.sum = this.num1+ this.num2;
             }
             
          
