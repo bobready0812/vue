@@ -3,7 +3,7 @@
     <br>
     <input  placeholder="number2" class="num2">
     <br>
-    <button @click="add" class="sum">더하기</button>
+    <button @click="add" class="sum">곱하기</button>
     <h1 class="h1"> {{sum}} </h1>
 </template>
 
