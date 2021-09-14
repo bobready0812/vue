@@ -1,10 +1,19 @@
 <template>
-    <input placeholder="number1" class="num1">
-    <br>
-    <input  placeholder="number2" class="num2">
-    <br>
-    <button @click="add" class="sum">곱하기</button>
-    <h1 class="h1"> {{sum}} </h1>
+   
+   <h1> {{num1}} </h1>
+   <h1> {{num2}} </h1>
+   
+   <button @click="increase1">1</button>
+   <button @click="increase2">2</button>
+   <button @click="increase3">3</button>
+   <button @click="increase4">4</button>
+   <button @click="increase5">5</button>
+   <button @click="increase6">6</button>
+   <button @click="increase7">7</button>
+   <button @click="increase8">8</button>
+   <button @click="increase9">9</button>
+   <br>
+   <button class="add" @click="add">Add</button>
 </template>
 
 <script>
@@ -13,17 +22,81 @@
         name: 'App',
         data() {
             return {
-                sum:null,
+               num1:null,
+               num2:null
 
                     }
         },
-        methods: {
-          add() {
-              const num1 = document.querySelector(".num1");
-              const num2 = document.querySelector(".num2");
-
-              this.sum = Number(num1.value) * Number(num2.value);
-          }
+        methods: { 
+            increase1() {
+            if(this.num1 == null) {
+                this.num1 = 1;
+            } else {
+                this.num2 = 1;
+            }
+            },
+            increase2() {
+            if(this.num1 == null) {
+                this.num1 = 2;
+            } else {
+                this.num2 = 2;
+            }
+            },
+            increase3() {
+            if(this.num1 == null) {
+                this.num1 = 3;
+            } else {
+                this.num2 = 3;
+            }
+            },
+            increase4() {
+            if(this.num1 == null) {
+                this.num1 = 4;
+            } else {
+                this.num2 = 4;
+            }
+            },
+            increase5() {
+            if(this.num1 == null) {
+                this.num1 = 5;
+            } else {
+                this.num2 = 5;
+            }
+            },
+            increase6() {
+            if(this.num1 == null) {
+                this.num1 = 6;
+            } else {
+                this.num2 = 6;
+            }
+            },
+            increase7() {
+            if(this.num1 == null) {
+                this.num1 = 7;
+            } else {
+                this.num2 = 7;
+            }
+            },
+            increase8() {
+            if(this.num1 == null) {
+                this.num1 = 8;
+            } else {
+                this.num2 = 8;
+            }
+            },
+            increase9() {
+            if(this.num1 == null) {
+                this.num1 = 9;
+            } else {
+                this.num2 = 9;
+            }
+            },
+             
+            add() {
+            
+            }
+            
+         
         }
     }
 </script>
@@ -38,19 +111,19 @@
         color: #2c3e50;
         margin-top: 60px;
     }
+    
 
-    .num1{
-        margin: 30px;
-        font-size: 50px;
+    .add {
+        margin: 50px;
     }
-
-    .num2{
-        margin: 30px;
-        font-size: 50px;
+    h1 {
+        font-size: 100px;
     }
-
+    
     button {
-        font-size:50px;
+        font-size:100px;
+        padding:30px;
     }
+ 
     
 </style>
