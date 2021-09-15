@@ -2,6 +2,7 @@
    
    <h1> {{num1}} </h1>
    <h1> {{num2}} </h1>
+   <h1> {{num3}} </h1>
    <h1> {{sum}} </h1>
    <button @click="increase1">1</button>
    <button @click="increase2">2</button>
@@ -24,6 +25,7 @@
             return {
                num1:null,
                num2:null,
+               num3:null,
                sum:null
                     }
         },
@@ -31,69 +33,88 @@
             increase1() {
             if(this.num1 == null) {
                 this.num1 = 1;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 1;
+            } else {
+                this.num3 = 1;
             }
+
             },
             increase2() {
             if(this.num1 == null) {
                 this.num1 = 2;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 2;
+            } else {
+                this.num3 = 2;
             }
             },
             increase3() {
-            if(this.num1 == null) {
+           if(this.num1 == null) {
                 this.num1 = 3;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 3;
+            } else {
+                this.num3 = 3;
             }
             },
             increase4() {
             if(this.num1 == null) {
                 this.num1 = 4;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 4;
+            } else {
+                this.num3 = 4;
             }
             },
             increase5() {
-            if(this.num1 == null) {
+           if(this.num1 == null) {
                 this.num1 = 5;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 5;
+            } else {
+                this.num3 = 5;
             }
             },
             increase6() {
             if(this.num1 == null) {
                 this.num1 = 6;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 6;
+            } else {
+                this.num3 = 6;
             }
             },
             increase7() {
             if(this.num1 == null) {
                 this.num1 = 7;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 7;
+            } else {
+                this.num3 = 7;
             }
             },
             increase8() {
             if(this.num1 == null) {
                 this.num1 = 8;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 8;
+            } else {
+                this.num3 = 8;
             }
             },
             increase9() {
             if(this.num1 == null) {
                 this.num1 = 9;
-            } else {
+            } else if(this.num2 == null) {
                 this.num2 = 9;
+            } else {
+                this.num3 = 9;
             }
             },
              
             add() {
-              this.sum = this.num1+ this.num2;
+              this.sum = this.num1+ this.num2 + this.num3;
             }
             
          
