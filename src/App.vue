@@ -15,6 +15,8 @@
    <button @click="increase9">9</button>
    <br>
    <button class="add" @click="add">Add</button>
+   <br>
+   <button class="add" @click="reset">Reset</button>
 </template>
 
 <script>
@@ -115,9 +117,16 @@
              
             add() {
               this.sum = this.num1+ this.num2 + this.num3;
+            },
+
+            reset() {
+                this.num1 = null;
+                this.num2 = null;
+                this.num3 = null;
+                this.sum = null;
             }
             
-         
+        
         }
     }
 </script>
