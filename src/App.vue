@@ -10,7 +10,7 @@
    <button @click="increase4">4</button>
    <button @click="increase5">5</button>
    <button @click="increase6">6</button>
-   <button @click="increase7">7</button>
+   <button class="one" @click="increase7">7</button>
    <button @click="increase8">8</button>
    <button @click="increase9">9</button>
    <br>
@@ -153,7 +153,14 @@
     button {
         font-size:100px;
         padding:30px;
+        
     }
- 
+    
+
+    button :hover {
+        background-color: black;
+        color:white;
+    }
+
     
 </style>
