@@ -4,19 +4,21 @@
    <h1> {{num2}} </h1>
    <h1> {{num3}} </h1>
    <h1> {{sum}} </h1>
-   <button @click="increase1">1</button>
-   <button @click="increase2">2</button>
-   <button @click="increase3">3</button>
-   <button @click="increase4">4</button>
-   <button @click="increase5">5</button>
-   <button @click="increase6">6</button>
-   <button class="one" @click="increase7">7</button>
-   <button @click="increase8">8</button>
-   <button @click="increase9">9</button>
+   <button id="btn1" @click="increase1">1</button>
+   <button id="btn2" @click="increase2">2</button>
+   <button id="btn3" @click="increase3">3</button>
+   <button id="btn4" @click="increase4">4</button>
+   <button id="btn5" @click="increase5">5</button>
+   <button id="btn6" @click="increase6">6</button>
+   <button id="btn7" @click="increase7">7</button>
+   <button id="btn8" @click="increase8">8</button>
+   <button id="btn9" @click="increase9">9</button>
    <br>
    <button class="add" @click="add">Add</button>
    <br>
    <button class="add" @click="reset">Reset</button>
+   <br>
+   <button class="reset" @click="reset2">Hide</button>
 </template>
 
 <script>
@@ -125,7 +127,27 @@
                 this.num3 = null;
                 this.sum = null;
             }
-            
+             ,
+            reset2() {
+                const button1 =document.getElementById("btn1");
+                const button2 =document.getElementById("btn2");
+                const button3 =document.getElementById("btn3");
+                const button4 =document.getElementById("btn4");
+                const button5 =document.getElementById("btn5");
+                const button6 =document.getElementById("btn6");
+                const button7 =document.getElementById("btn7");
+                const button8 =document.getElementById("btn8");
+                const button9 =document.getElementById("btn9");
+                button1.classList.add("hidden");
+                button2.classList.add("hidden");
+                button3.classList.add("hidden");
+                button4.classList.add("hidden");
+                button5.classList.add("hidden");
+                button6.classList.add("hidden");
+                button7.classList.add("hidden");
+                button8.classList.add("hidden");
+                button9.classList.add("hidden");
+            }
         
         }
     }
@@ -156,11 +178,10 @@
         
     }
     
-
-    button :hover {
-        background-color: black;
-        color:white;
+    .hidden {
+        display: none;
     }
 
+    
     
 </style>
