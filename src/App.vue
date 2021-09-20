@@ -1,5 +1,5 @@
 <template>
-   
+   <div class = "arrange">
    <h1> {{num1}} </h1>
    <h1> {{num2}} </h1>
    <h1> {{num3}} </h1>
@@ -19,6 +19,7 @@
    <button class="add" @click="reset">Reset</button>
    <br>
    <button class="reset" @click="reset2">Hide</button>
+   </div>
 </template>
 
 <script>
@@ -169,17 +170,23 @@
         margin: 50px;
     }
     h1 {
-        font-size: 100px;
+        font-size: 150px;
+        padding: 20px;
     }
     
     button {
-        font-size:100px;
-        padding:30px;
+        font-size:50px;
+        padding:20px;
+        height: 100px;
         
     }
     
     .hidden {
         display: none;
+    }
+    
+    .arrange {
+        display: flex;
     }
 
     
