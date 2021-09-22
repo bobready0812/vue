@@ -6,6 +6,9 @@
 <div class="num1">
   <h1> {{num2}} </h1>
 </div> 
+<div class="num1">
+    <h1> {{times1}} </h1>
+</div>
 </div>
 </template>
 
@@ -15,7 +18,9 @@
         name: 'App',
         data() {
             return {
-               
+               num1: 0,
+               num2: 0,
+               times1: 0
                     }
         },
         methods: { 
