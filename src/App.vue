@@ -1,6 +1,33 @@
 <template>
 <div class="calc">
-<div class="num1">
+    <div class="btn">
+        <button>1</button>
+    </div>
+     <div class="btn">
+        <button>2</button>
+    </div>
+     <div class="btn">
+        <button>3</button>
+    </div>
+     <div class="btn">
+        <button>4</button>
+    </div>
+     <div class="btn">
+        <button>5</button>
+    </div>
+     <div class="btn">
+        <button>6</button>
+    </div>
+     <div class="btn">
+        <button>7</button>
+    </div>
+     <div class="btn">
+        <button>8</button>
+    </div>
+     <div class="btn">
+        <button>9</button>
+    </div>
+   <div class="num1">
   <h1> {{num1}} </h1>
 </div> 
 <div class="num1">
@@ -24,7 +51,10 @@
                     }
         },
         methods: { 
-           
+        
+        times() {
+            
+        }
         
         }
     }
