@@ -1,30 +1,30 @@
 <template>
 <div class="calc">
-    <div class="btn">
+    <div @click=insert1 class="btn">
         <button>1</button>
     </div>
-     <div class="btn">
+     <div @click=insert2 class="btn">
         <button>2</button>
     </div>
-     <div class="btn">
+     <div @click=insert3 class="btn">
         <button>3</button>
     </div>
-     <div class="btn">
+     <div  @click=insert4 class="btn">
         <button>4</button>
     </div>
-     <div class="btn">
+     <div @click=insert5 class="btn">
         <button>5</button>
     </div>
-     <div class="btn">
+     <div  @click=insert6 class="btn">
         <button>6</button>
     </div>
-     <div class="btn">
+     <div  @click=insert7 class="btn">
         <button>7</button>
     </div>
-     <div class="btn">
+     <div @click=insert8 class="btn">
         <button>8</button>
     </div>
-     <div class="btn">
+     <div @click=insert9 class="btn">
         <button>9</button>
     </div>
    <div class="num1">
