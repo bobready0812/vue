@@ -52,6 +52,61 @@
         },
         methods: { 
         
+        insert1() {
+            this.num1 = 1
+        }
+          
+        ,
+         
+        insert2() {
+            this.num1 = 2
+        }
+          
+        ,
+         
+        insert3() {
+            this.num1 = 3
+        }
+          
+        ,
+         
+        insert4() {
+            this.num1 = 4
+        }
+          
+        ,
+         
+        insert5() {
+            this.num1 = 5
+        }
+          
+        ,
+         
+        insert6() {
+            this.num1 = 6
+        }
+          
+        ,
+         
+        insert7() {
+            this.num1 = 7
+        }
+          
+        ,
+
+         
+        insert8() {
+            this.num1 = 8
+        }
+          
+        ,
+         
+        insert9() {
+            this.num1 = 9
+        }
+          
+        ,
+
         times() {
             
         }
