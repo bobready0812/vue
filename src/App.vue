@@ -53,84 +53,71 @@
         methods: { 
         
         insert1() { 
-            if( this.num1 == null ) {
-            this.num1 = 1 } else {
-                this.num2 = 1
-            }
+            
+            this.num1 = 1 ;
+            
      
         }
           
         ,
          
         insert2() {
-            if( this.num1 == null ) {
-            this.num1 = 2 } else {
-                this.num2 = 2
-            }
+            
+            this.num1 = 2 ;
+              
         }
           
         ,
          
         insert3() {
-            if( this.num1 == null ) {
-            this.num1 = 3 } else {
-                this.num2 = 3
-            }
+            
+            this.num1 = 3 ;
         }
           
         ,
          
         insert4() {
-            if( this.num1 == null ) {
-            this.num1 = 4 } else {
-                this.num2 = 4
+            
+            this.num1 = 4 ;
             }
-        }
+        
           
         ,
          
         insert5() {
-            if( this.num1 == null ) {
-            this.num1 = 5 } else {
-                this.num2 = 5
-            }
+           
+            this.num1 = 5;
+            
         }
           
         ,
          
         insert6() {
-            if( this.num1 == null ) {
-            this.num1 = 6 } else {
-                this.num2 = 6
-            }
+           
+            this.num1 = 6;
         }
           
         ,
          
         insert7() {
-           if( this.num1 == null ) {
-            this.num1 = 7 } else {
-                this.num2 = 7
-            }
+           
+            this.num1 = 7 ;
         }
           
         ,
 
          
         insert8() {
-            if( this.num1 == null ) {
-            this.num1 = 8 } else {
-                this.num2 = 8
-            }
+            
+            this.num1 = 8 ;
         }
           
         ,
          
         insert9() {
-            if( this.num1 == null ) {
-            this.num1 = 9 } else {
-                this.num2 = 9
-            }
+            
+            this.num1 = 9 ;
+            
         }
           
         ,
