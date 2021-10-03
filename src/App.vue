@@ -27,6 +27,7 @@
         <div @click="insert9" class="btn">
             <button>9</button>
         </div>
+        
         <div class="num1">
             <h1>
                 {{num1}}
@@ -48,6 +49,9 @@
             </h1>
         </div>
     </div>
+    <div @click="times" class="btn">
+            <button>X</button>
+        </div>
 </template>
 
 <script>
@@ -72,80 +76,96 @@
 
             insert2() {
 
-                if (this.num1 == 0) {
+               if (this.num1 == 0) {
                     this.num1 = 2;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 2;
+                } else {
+                    this.num3 = 2;
                 }
-
             },
 
             insert3() {
 
-                if (this.num1 == 0) {
+                 if (this.num1 == 0) {
                     this.num1 = 3;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 3;
+                } else {
+                    this.num3 = 3;
                 }
             },
 
             insert4() {
 
-                if (this.num1 == 0) {
+                 if (this.num1 == 0) {
                     this.num1 = 4;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 4;
+                } else {
+                    this.num3 = 4;
                 }
             },
 
             insert5() {
 
-                if (this.num1 == 0) {
+               if (this.num1 == 0) {
                     this.num1 = 5;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 5;
+                } else {
+                    this.num3 = 5;
                 }
-
             },
 
             insert6() {
 
-                if (this.num1 == 0) {
+                 if (this.num1 == 0) {
                     this.num1 = 6;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 6;
+                } else {
+                    this.num3 = 6;
                 }
             },
 
             insert7() {
 
-                if (this.num1 == 0) {
+               if (this.num1 == 0) {
                     this.num1 = 7;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 7;
+                } else {
+                    this.num3 = 7;
                 }
             },
 
             insert8() {
 
-                if (this.num1 == 0) {
+              if (this.num1 == 0) {
                     this.num1 = 8;
-                } else {
+                } else if (this.num2 == 0) {
                     this.num2 = 8;
+                } else {
+                    this.num3 = 8;
                 }
             },
 
             insert9() {
 
                 if (this.num1 == 0) {
-                    this.num1 = 9;
-                } else {
+                    this.num1 = 9 ;
+                } else if (this.num2 == 0) {
                     this.num2 = 9;
+                } else {
+                    this.num3 = 9;
                 }
 
             },
 
-            times() {}
+            times() {
+                this.times1 = this.num1 * this.num2 * this.num3;
+            }
 
         }
     }
