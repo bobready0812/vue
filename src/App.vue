@@ -48,9 +48,17 @@
                 {{times1}}
             </h1>
         </div>
+        <div class="num1">
+            <h1>
+                {{times2}}
+            </h1>
+        </div>
     </div>
     <div @click="times" class="btn">
             <button>X</button>
+        </div>
+        <div @click="times2" class="btn">
+            <button>X하고 제곱</button>
         </div>
 </template>
 
@@ -59,7 +67,7 @@
     export default {
         name: 'App',
         data() {
-            return {num1: 0, num2: 0, num3:0, times1: 0}
+            return {num1: 0, num2: 0, num3:0, times1: 0, times2: 0}
         },
         methods: {
 
@@ -164,6 +172,11 @@
             },
 
             times() {
+                this.times1 = this.num1 * this.num2 * this.num3;
+            }
+            ,
+
+            times2() {
                 this.times1 = this.num1 * this.num2 * this.num3;
             }
 
