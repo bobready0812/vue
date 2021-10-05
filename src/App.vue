@@ -57,7 +57,7 @@
     <div @click="times" class="btn">
             <button>X</button>
         </div>
-        <div @click="times2" class="btn">
+        <div @click="timtim2" class="btn">
             <button>X하고 제곱</button>
         </div>
 </template>
@@ -176,8 +176,8 @@
             }
             ,
 
-            times2() {
-                this.times1 = this.num1 * this.num2 * this.num3;
+            timtim2() {
+                this.times2 = (this.num1 * this.num2 * this.num3) **2 ;
             }
 
         }
