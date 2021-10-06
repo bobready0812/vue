@@ -177,7 +177,7 @@
             ,
 
             timtim2() {
-                this.times2 = (this.num1 * this.num2 * this.num3) **2 ;
+                this.times2 = (this.num1 * this.num2 * this.num3) **4 ;
             }
 
         }
@@ -213,6 +213,6 @@
 
     button {
         font-size: 50px;
-        background-color: aquamarine;
+        background-color: skyblue;
     }
 </style>
