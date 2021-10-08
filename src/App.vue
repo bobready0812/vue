@@ -9,6 +9,9 @@
         <div @click="insert3" class="btn">
             <button>3</button>
         </div>
+
+    </div>   
+    <div class="calc">
         <div @click="insert4" class="btn">
             <button>4</button>
         </div>
@@ -18,6 +21,7 @@
         <div @click="insert6" class="btn">
             <button>6</button>
         </div>
+    </div>
         <div @click="insert7" class="btn">
             <button>7</button>
         </div>
@@ -53,13 +57,14 @@
                 {{times2}}
             </h1>
         </div>
-    </div>
-    <div @click="times" class="btn">
+        <div @click="times" class="btn">
             <button>X</button>
         </div>
         <div @click="timtim2" class="btn">
             <button> /3 나머지</button>
         </div>
+    </div>
+    
 </template>
 
 <script>
@@ -196,23 +201,28 @@
     }
 
     .calc {
-        display: flex;
+       display: flex;
+       background-color: aquamarine;
     }
 
     .num1 {
         padding: 20px;
     }
 
-    .num2 {
-        padding: 20px;
-    }
-
+   
     h1 {
+        position: relative;
         font-size: 50px;
+        top:-50px;
+
     }
 
     button {
-        font-size: 50px;
+        font-size: 30px;
         background-color: skyblue;
+    }
+
+    body {
+        background-color: antiquewhite;
     }
 </style>
