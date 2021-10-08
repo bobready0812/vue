@@ -22,6 +22,7 @@
             <button>6</button>
         </div>
     </div>
+    <div class="calc">
         <div @click="insert7" class="btn">
             <button>7</button>
         </div>
@@ -31,7 +32,8 @@
         <div @click="insert9" class="btn">
             <button>9</button>
         </div>
-        
+    </div>    
+    <div class = "calc2">
         <div class="num1">
             <h1>
                 {{num1}}
@@ -64,7 +66,6 @@
             <button> /3 나머지</button>
         </div>
     </div>
-    
 </template>
 
 <script>
@@ -201,6 +202,10 @@
     }
 
     .calc {
+       display: flex;
+       background-color: aquamarine;
+    }
+    .calc2 {
        display: flex;
        background-color: aquamarine;
     }
